@@ -30,8 +30,8 @@
 
         </div>
 
-        <div id="detail1">
-            <img class="background_station" id="detail1" src="Assets\Frames\Detai1Frame.png">
+        <div id="detail1" style="display: none;">
+            <img class="background_station" id="detail1" src="Assets\Frames\Detai1Frame.png" >
             
             <button type="button" class="button_move" id="button_detail1_to_start">
                 Back
@@ -53,8 +53,8 @@
 
     
 
-        <div id="detail2">
-            <img class="background_station" id="detail2" src="Assets\Frames\Detai2Frame.png">
+        <div id="detail2" style="display: none;">
+            <img class="background_station" id="detail2" src="Assets\Frames\Detai2Frame.png" >
             
             <button type="button" class="button_move" id="button_detail2_to_start">
                 Back
@@ -62,7 +62,7 @@
 
         </div>
 
-        <div id="decompose">
+        <div id="decompose" style="display: none;">
             <img class="background_station" id="decompose" src="Assets\Frames\Decompose.png">
             
             <button type="button" class="button_move" id="button_decompose_to_start">
@@ -218,10 +218,7 @@
 
 
     $(document).ready(function(){
-        $("#detail1").hide()
-        $("#detail2").hide()
-        $("#decompose").hide()
-
+       
 
         $("#button_start_to_detail1").click(function() {
             GoFromStartToDetail1();
